@@ -1,5 +1,11 @@
 @import "../../../color-variables.scss";
 
+main {
+     display: flex;
+     flex-direction: column;
+     gap: 84px;
+}
+
 .main-section {
      display: flex;
      justify-content: center;
@@ -28,16 +34,38 @@
      justify-content: center;
      font-family: "Poppins", sans-serif;
 
-     .headline {
-          border-bottom: 10px solid;
+     gap: 70px;
+
+     .benefit-data {
+          border-bottom: 10px solid $secundary-color;
+          padding-bottom: 40px;
+
           h2 {
                font-size: 60px;
                font-weight: 600;
                font-family: "Roboto", sans-serif;
                color: $primary-text;
           }
-     }
 
+     }
+     
+     p {
+          font-size: 40px;
+          font-style: italic;
+
+          b {
+               background: -webkit-linear-gradient(180deg, $light-primary-color, $secundary-color);
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+               font-style: normal;
+          }
+     }
+}
+
+.cta-section {
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
 @Media (min-width: 1080px) {
